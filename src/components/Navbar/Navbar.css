@@ -1,0 +1,11 @@
+.Navbar{
+    width: 100%;
+    height: 3.2rem;
+}
+.Navbar img{
+    width: auto;
+    height: 1.8rem;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+    float: left;
+}

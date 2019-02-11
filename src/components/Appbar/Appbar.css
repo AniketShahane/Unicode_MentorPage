@@ -1,0 +1,30 @@
+.Toolbar {
+    background-color: white;
+}
+
+.Toolbar img {
+    width: auto;
+    height: 1.8rem;
+    margin: auto 0.4rem;
+    float: left;
+}
+
+.ButtonContainer {
+    margin-left: auto; 
+}
+
+.Button {
+    font-size: 0.75rem;
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 580;
+}
+
+.ButtonActive {
+    font-weight: 1000;
+}
+
+.SearchInput {
+    margin: auto !important;
+    margin-bottom: 0.6rem;
+}

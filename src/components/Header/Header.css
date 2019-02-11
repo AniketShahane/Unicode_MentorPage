@@ -1,0 +1,15 @@
+.Header{
+    width: 100%;
+    background-image: linear-gradient(-260deg, #04CBAA, #67C5DD);
+    height:200px;
+}
+.Header h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    margin-left: 43%;
+    font-size: 64px;
+    font-weight: 500;
+}

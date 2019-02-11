@@ -1,0 +1,42 @@
+.Container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: auto !important;
+}
+
+.SearchInput {
+    border: 3px solid #D1D1D1;
+    border-radius: 6rem;
+    background-color: #EDEDED;
+    text-transform: italicize;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.6rem;
+    outline: none;
+    margin-left: 0.2rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-family: "Open Sans", serif;
+    font-style: italic;
+    font-weight: 600;
+    height: 1.8rem;
+}
+
+.SearchIconStyle {
+    margin-top: 1.25rem;
+    margin-left: auto;
+    margin-bottom: auto;
+    color: #8B8B8B;
+    font-weight: 550;
+}
+
+.FilterIconStyle {
+    margin-top: 1.25rem; 
+    margin-bottom: auto;
+    background-image: linear-gradient(133deg,#12B6A6,#532357);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 3rem;
+    font-weight: 550;
+}
