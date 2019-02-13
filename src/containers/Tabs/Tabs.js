@@ -111,8 +111,8 @@ class CustomizedTabs extends React.Component {
           index={this.state.value}
           onChangeIndex={this.handleChangeIndex}
         >
-          <TabContainer><Cards cardsInfo={findMentors} searchInput={true}/></TabContainer>
-          <TabContainer><Cards cardsInfo={sentRequests} searchInput={false} /></TabContainer>
+          <TabContainer><Cards cardsInfo={findMentors} searchInput={true} filterIcon/></TabContainer>
+          <TabContainer><Cards cardsInfo={sentRequests} searchInput={false}/></TabContainer>
           <TabContainer><Cards cardsInfo={receivedRequests} searchInput={false}/></TabContainer>
         </SwipeableViews>
       </div>

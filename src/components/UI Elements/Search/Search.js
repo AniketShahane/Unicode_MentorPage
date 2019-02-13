@@ -19,8 +19,10 @@ const Search = (props) => {
 
         <div className={classes.Container}>
             {filter_icon}
-            {search_icon}
-            <input type="text" placeholder="Search" name="searchText" className={classes.SearchInput} style={style}/>
+            <div className={classes.inputContainer}>
+                {search_icon}
+                <input type="text" placeholder="Search" name="searchText" className={classes.SearchInput} style={style}/>
+            </div>
         </div>
     );
 }

@@ -7,7 +7,7 @@ const Cards = (props) => {
     const cardsInformation = [...props.cardsInfo];
     let searchInput = null;
     if(props.searchInput){
-        searchInput = (<SearchInput />);
+        searchInput = (<SearchInput filter={props.filterIcon}/>);
     }
     return (
         <>    
