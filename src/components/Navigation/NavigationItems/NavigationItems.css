@@ -1,0 +1,21 @@
+.ButtonContainer {
+    margin-left: auto;
+}
+
+.Button {
+    font-size: 0.75rem;
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 580;
+    padding: auto;
+}
+
+.ButtonActive {
+    font-weight: 1000;
+}
+
+@media (max-width: 1340px) {
+    .ButtonContainer{
+        display: none;
+    }
+}

@@ -1,6 +1,7 @@
 .Container{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: auto !important;
 }
@@ -47,5 +48,17 @@
     color: transparent;
     margin-left: 3rem;
     font-weight: 550;
+}
+
+@media (max-width: 400px) {
+    .SearchInput {
+        width: 60%;
+    }
+}
+
+@media (max-width: 720px) {
+    .inputContainer{
+        margin: auto;
+    }
 }
 

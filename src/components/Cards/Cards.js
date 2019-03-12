@@ -7,8 +7,11 @@ const Cards = (props) => {
     const cardsInformation = [...props.cardsInfo];
     let searchInput = null;
     if(props.searchInput){
-        searchInput = (<SearchInput filter={props.filterIcon}/>);
-    }
+        searchInput = (<SearchInput
+                filter={props.filterIcon}
+                styles={{marginRight: '0.6rem'}}
+                className={classes.ResponsiveCard}/>);
+}
     return (
         <>    
             {searchInput}

@@ -1,0 +1,63 @@
+.ButtonContainer {
+    margin-left: auto;
+}
+
+.Button {
+    font-size: 0.75rem;
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 580;
+    padding: auto;
+}
+
+.ButtonActive {
+    font-weight: 1000;
+}
+
+.SideNavbarClosed {
+    display: none;
+    width: 0;
+}
+
+@media (max-width: 1340px) {
+    .ButtonContainer{
+        display: none;
+    }
+
+    .SideNavbarClosed {
+        display: none;
+        width: 0;
+        transition: 0.5s;
+    }
+
+    .SideNavbarOpen {
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto !important;
+        background-color: rgba(246, 246, 246, 0.95);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1000;
+        padding-top: 4rem;
+        transition: 1s;
+        -webkit-animation-name: animation_sidebar; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+        animation-name: animation_sidebar;
+        animation-duration: 0.4s;
+    }
+      /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes animation_sidebar {
+        from {width: 13rem;}
+        to {width: 14rem;}
+    }
+
+    /* Standard syntax */
+    @keyframes animation_sidebar {
+        from {width: 13rem;} 
+        to {width: 14rem;}
+    }
+
+}

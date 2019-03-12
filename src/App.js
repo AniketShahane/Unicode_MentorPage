@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classes from './App.css';
-// import Navbar from './components/Navbar/Navbar';
 import Navbar from './components/Appbar/Appbar';
 import Header from './components/Header/Header';
 import SimpleTabs from './containers/Tabs/Tabs';
@@ -29,12 +28,23 @@ class App extends Component {
     {id: 3, name: 'Mark Twain', position: 'FrontEnd Dev', button1: 'Accept', button2: 'Reject'}
   ]
 
+  state = {
+    navbar: false
+  }
+
+  onNavbarToggleHandler = () => {
+    this.setState({ navbar: !this.state.navbar  });
+  }
+
   render() {
     return (
       <div className={classes.App}>
-        <Navbar />
+        <Navbar clicked={this.onNavbarToggleHandler} show={this.state.navbar}/>
         <Header />
-        <SimpleTabs findMentors={this.findMentors} sentRequests={this.sentRequests} receivedRequests={this.receivedRequests}/>
+        <SimpleTabs 
+          findMentors={this.findMentors} 
+          sentRequests={this.sentRequests} 
+          receivedRequests={this.receivedRequests}/>
         <div className={classes.last}></div>
       </div>
     );
