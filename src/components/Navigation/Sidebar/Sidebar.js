@@ -2,6 +2,7 @@ import React from 'react'
 import SearchInput from '../../UI Elements/Search/Search';
 import { Button } from '@material-ui/core';
 import classes from './Sidebar.css';
+import unicodeLogo from './unicodelogo.png';
 
 const Sidebar = (props) => {
 
@@ -13,6 +14,11 @@ const Sidebar = (props) => {
 
     return (
         <div className={navbarClass}>
+            <img
+                src={unicodeLogo}
+                alt=""
+                style={{height: 'auto', width: '80%', margin: '0.4rem auto'}} />
+            
             <SearchInput filter={false} styles={{width: '60%', height: '1.6rem', marginBottom: '1rem'}}/>
             <Button onClick={props.clicked}>
                 <span className={[classes.Button, classes.ButtonActive].join(' ')}>

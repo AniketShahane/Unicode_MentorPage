@@ -37,6 +37,7 @@
         margin-right: auto !important;
         background-color: rgba(246, 246, 246, 0.95);
         position: fixed;
+        padding-top: 1rem !important;
         top: 0;
         left: 0;
         height: 100%;

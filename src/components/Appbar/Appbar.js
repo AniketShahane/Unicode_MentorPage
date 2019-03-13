@@ -20,11 +20,19 @@ const styles = {
 
 const ButtonAppBar = (props) => {
 
+  const { show } = props;
+  let style = {};
+  if (show){
+    style = {
+      display: 'none'
+    };
+  }
+
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.Toolbar}>
-          <span className={classes.HamMenu} onClick={props.clicked}>
+          <span className={classes.HamMenu} onClick={props.clicked} style={style}>
             <i className="material-icons">menu</i>
           </span>          
           
